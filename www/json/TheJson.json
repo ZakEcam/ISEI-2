@@ -9,13 +9,7 @@
         "Engelure": {},
         "Brûlure à l'oeil": {}
     },
-    "Noyade": { "Demarche":  [
-		{
-			"href": "Demarche",
-			"rel": "#page3"
-		}
-		
-	]},
+    "Noyade": { "Demarche":""},
     "Morsure / Piqûre": {
         "Animaux": {},
         "Serpent": {},

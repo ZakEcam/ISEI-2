@@ -364,7 +364,7 @@ and open the template in the editor.
 			// si ce n'est pas l'initialisation, on redefinit le referenciel
 			if(categorie != "init")
 			{
-			        stack.push({data: g_data, title: categorie});
+			        stack.push({data: g_data, title: categorie});// unused
 					g_data = g_data[categorie];
 					$('#h3-title').text(categorie);
 					
@@ -373,7 +373,7 @@ and open the template in the editor.
 			{
 				set_g_data();
 			    $('#h3-title').text('Urgences');
-                stack.pop({data: g_data, title: categorie});
+                stack.pop({data: g_data, title: categorie}); //unused
 			}
 			
 			var cats=g_data;			
@@ -384,6 +384,8 @@ and open the template in the editor.
 			if (typeof g_data === 'string') //Si on est au text final
 			{
 				c.innerHTML += g_data + '<br>';
+				
+				
 			}
 			else // display cats
 			{
@@ -400,7 +402,12 @@ and open the template in the editor.
 					async: false,
 					dataType: 'json',
 					success: function(data) {
-						g_data = data;						
+						g_data = data;
+						
+						
+						
+						
+						
 					},
 					error: function(error, texterror, other){
 					}
